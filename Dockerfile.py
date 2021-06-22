@@ -53,7 +53,6 @@ RUN apt-get install -y --no-install-recommends python2.7 python-dev && \
 
 COPY torch-0.4.1-cp27-cp27mu-manylinux1_x86_64.whl  /tmp
 
-RUN apt-get install -y --no-install-recommends python-dev
 RUN pip install /tmp/torch-0.4.1-cp27-cp27mu-manylinux1_x86_64.whl\
                 torchvision==0.2.2\
                 numpy\
