@@ -74,3 +74,6 @@ ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 RUN echo 'Asia/Shanghai' >/etc/timezone
 WORKDIR /
+
+#RUN echo "root:ustc" | chpasswd
+#RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
