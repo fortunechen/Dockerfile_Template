@@ -63,7 +63,8 @@ RUN pip install /tmp/torch-0.4.1-cp27-cp27mu-manylinux1_x86_64.whl\
                 nltk \
                 scikit-image \
                 Pillow
-               
+
+RUN rm -rf /tmp/torch-0.4.1-cp27-cp27mu-manylinux1_x86_64.whl
 # ------------------------------------------------------------------
 Run ldconfig && \
   apt-get -y clean && \
