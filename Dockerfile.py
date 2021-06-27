@@ -64,7 +64,7 @@ RUN pip install /tmp/torch-0.4.1-cp27-cp27mu-manylinux1_x86_64.whl\
                 scikit-image \
                 Pillow \
                 pyyaml
-
+#RUN pip uninstall -y **** #for non-interactive mode.
 RUN rm -rf /tmp/torch-0.4.1-cp27-cp27mu-manylinux1_x86_64.whl
 # ------------------------------------------------------------------
 Run ldconfig && \
